@@ -8,6 +8,6 @@
 </h1>
 
 <h2>
-    Ciao {{ $firstName }} {{ $lastName }}
+    ciao {{$firstname}} {{$lastname}}
 </h2>
 @endsection
