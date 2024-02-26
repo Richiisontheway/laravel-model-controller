@@ -3,6 +3,7 @@
 use App\Http\Controllers\read\MovieController;
 use Illuminate\Support\Facades\Route;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,7 +15,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [MovieController::class, 'index'])->name('home');
+Route::get('/', [MovieController::class, 'index'])->name('movies.index');
+Route::get('/ciao/{id}', [MovieController::class, 'show'])->name('movies.show');
+
 
 
 // Route::get(PERCORSO CON CUI ARRIVARE ALLA PAGINA, FUNZIONE DI CALLBACK CHE MI CREA LA RISPOSTA DA DARE ALL UTENTE)
